@@ -2,6 +2,8 @@
 
 This README is a for the usage of the spellchecker module. Check the `spellchecker.py` documentation for more details.
 
+**Note:** Current implementation reads in the entire doucment and dictionary file into memory before spell checking begins leading to a issues with needing excessively large amounts of memory to performing this task. Future work includes using an inputer buffered approach for reading in the doucment and dictionary file in order to remove the reliance on large amounts of free memory to run this program.
+
 ### How do I get set up? ###
 
 This program was built using Python v2.9.7
